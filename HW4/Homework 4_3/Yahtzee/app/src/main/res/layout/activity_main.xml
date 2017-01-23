@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.itsbaotime.www.yahtzee.MainActivity">
+
+
+
+    <Button
+        android:text="Start Roll"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:id="@+id/Roll"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Sum: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity = "center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/sum"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/dice_1"
+        android:layout_marginTop="34dp"
+        android:id="@+id/Dice_1"
+        android:layout_below="@+id/sum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/dice_1"
+        android:id="@+id/Dice_3"
+        android:layout_alignTop="@+id/Dice_2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/dice_1"
+        android:id="@+id/Dice_2"
+        android:layout_above="@+id/Dice_4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/dice_1"
+        android:id="@+id/Dice_4"
+        android:layout_below="@+id/Dice_1"
+        android:layout_alignLeft="@+id/Roll"
+        android:layout_alignStart="@+id/Roll"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="63dp" />
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/dice_1"
+        android:id="@+id/Dice_5"
+        android:layout_alignTop="@+id/Dice_4"
+        android:layout_alignRight="@+id/Roll"
+        android:layout_alignEnd="@+id/Roll" />
+
+
+</RelativeLayout>
